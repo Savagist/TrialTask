@@ -21,11 +21,11 @@
  - GET - /api/quote/worse - method of getting the 10 worst quotes
  - POST - /api/quote -  method of creating a quote, request structure:
         {
-            "content": "savage"
+            "content": "text"
         }
  - PUT - /api/quote/{id} - method for changing the quote, request structure:
         {
-            "content": "savage"
+            "content": "text"
         }
  - DELETE - /api/quote/{id} - method of deleting a quote by id
 
