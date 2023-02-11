@@ -33,13 +33,13 @@ public class VoteController {
         return convertVoteDTO(voteService.findOne(id));
     }
 
-    @PostMapping("/up/{id}")
+    @GetMapping("/up/{id}")
     public ResponseEntity<HttpStatus> up(@PathVariable("id") Long id) {
         voteService.upVote(id);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
-    @PostMapping("/down/{id}")
+    @GetMapping("/down/{id}")
     public ResponseEntity<HttpStatus> down(@PathVariable("id") Long id) {
         voteService.downVote(id);
         return ResponseEntity.ok(HttpStatus.OK);
